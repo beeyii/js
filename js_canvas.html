@@ -72,7 +72,6 @@
   })
 
   window.addEventListener("touchmove", function(e) {
-    console.log(e.touches[0].screenX);
     draw(e.touches[0].screenX, e.touches[0].screenY);
   });
 
@@ -87,7 +86,7 @@
 
 
   document.querySelector("#color_picker").addEventListener("input", function(e) {
-    console.log(this)
+    color = this.value;
   });
 
 </script>
