@@ -72,7 +72,8 @@
   })
 
   window.addEventListener("touchmove", function(e) {
-    draw(e.pageX, e.pageY);
+    console.log(e.touches[0].screenX);
+    draw(e.touches[0].screenX, e.touches[0].screenY);
   });
 
   window.addEventListener('resize', function() {
